@@ -19,4 +19,5 @@ export const connectDB = async () => {
     `);
     console.log("Tabela todos criada ou já existe.");
     await db.close();
+    console.log("Conexão com o banco de dados fechada.");
 })();
