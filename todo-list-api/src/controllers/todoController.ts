@@ -7,6 +7,17 @@ export const getTodos = async (_req: Request, res: Response) => {
   res.json(todos);
 };
 
+export const getTodoById = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const db = await connectDB();
+  const todo = await db.get("SELECT * FROM todos WHERE id = ?", id);
+  if (todo) {
+    res.json(todo);
+  } else {
+    res.sendStatus(404);
+  }
+};
+
 export const createTodo = async (req: Request, res: Response) => {
   const { title } = req.body;
   const db = await connectDB();

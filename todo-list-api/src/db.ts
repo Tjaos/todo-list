@@ -14,7 +14,7 @@ export const connectDB = async () => {
         CREATE TABLE IF NOT EXISTS todos (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT NOT NULL,
-            completed INTEGER NOT NULL DEFAULT 0
+            completed INTEGER DEFAULT 0
         );
     `);
     console.log("Tabela todos criada ou já existe.");
