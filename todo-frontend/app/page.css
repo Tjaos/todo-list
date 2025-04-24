@@ -1,0 +1,121 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    color: rgb(64, 64, 255);
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(64, 64, 255);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;  
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+button {
+    background-color: rgb(64, 64, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.todo-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Updated from 90% to 100% */
+    max-width: 100%; /* Updated from 500px to 50% */
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(64, 64, 255);
+}
+.todo-item:last-child{
+    border-bottom: none;
+}
+.delete-button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+.delete-button:hover{
+    background-color: rgb(110, 0, 0);
+}
+.edit-button{
+    background-color: rgb(255, 255, 0);
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+.edit-button:hover{
+    background-color: rgb(125, 125, 37);
+}
+.save-button{
+    background-color: rgb(64, 64, 255);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-left: 10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+.save-button:hover{
+    background-color: rgb(52, 52, 236);
+}
+
+
+.todo-checkbox{
+    margin-right: 10px; 
+    cursor: pointer; 
+    width: 20px; 
+    display: inline-block;
+}
+.todo-actions{
+    display: flex;
+    gap: 10px;
+}
